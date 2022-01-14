@@ -3,11 +3,16 @@ console.log("main.js");
 let node1;
 
 function setup() {
-    createCanvas(400, 400);
-    node1 = new Node(1, 2, 3, 4, 5);
-    console.log(node1.m_dWeights);
+    createCanvas(constWindowWidth, constWindowHeight);
+    background(220);
+    node1 = new Node(0, 0, 0, 4, zconstSizeOfInputVector);
+    node1.render();
+    console.log(node1.m_itop);
+
+
+    noLoop();
 }
 
 function draw() {
-    background(220);
+    1;
 }

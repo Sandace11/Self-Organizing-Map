@@ -15,11 +15,22 @@ class Node {
         }
     }
 
-    render() {
-        red = m_dWeights[0] * 255;
-        green = m_dWeights[1] * 255;
-        blue = m_dWeights[2] * 255;
+    render() {  //Render the node on the screen
+        red = this.m_dWeights[0] * 255;
+        green = this.m_dWeights[1] * 255;
+        blue = this.m_dWeights[2] * 255;
 
-        rect(this.m_iLeft, this.m_iTop, this.m_iRight, this.m_iBottom);
+        rect(this.m_iLeft, this.m_iTop, constCellWidth, constCellHeight);
+    }
+
+    calculateDistance(inputVector) {
+        let distance = 0;
+    
+        for (let i = 0; i < this.m_dWeights.length; i++) {
+            distance += (InputVector[i] - m_dWeights[i]) *
+                        (InputVector[i] - m_dWeights[i]);
+        }
+    
+        return distance;
     }
 }
