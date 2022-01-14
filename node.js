@@ -3,8 +3,8 @@ class Node {
     constructor(lft, rgt, top, bot, NumWeights) {
         this.m_iLeft = lft;
         this.m_iTop = top;
-        this.m_iRight = rgt;
-        this.m_iBottom = bot;
+        this.m_iRight = rgt;    //Probably redundent . Try removing 
+        this.m_iBottom = bot;   //Probably redundent . Try removing 
 
         this.m_dWeights = []; //this nodes weights (3 valued vector in my case(defined in constants.js) but kept flexible to accomdate higher dimensional inputs.
         this.m_dx = this.m_iLeft + (this.m_iRight - this.m_iLeft) / 2; //X position of node in lattice
