@@ -20,6 +20,7 @@ class Node {
         green = this.m_dWeights[1] * 255;
         blue = this.m_dWeights[2] * 255;
 
+        fill(red, green, blue);
         rect(this.m_iLeft, this.m_iTop, constCellWidth, constCellHeight);
     }
 
