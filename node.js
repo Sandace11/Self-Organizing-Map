@@ -34,7 +34,7 @@ class Node {
         return distance;
     }
 
-    AdjustWeights(target, learningRate, influence) {      //for adjustment of weights during learning. target is the aaileko input vector. 
+    adjustWeights(target, learningRate, influence) {      //for adjustment of weights during learning. target is the aaileko input vector. 
         for (let w = 0; w < target.length; w++) {           //learningRate is the current learningRate as it isn't constant(only at beginning it was constStartLearningRate ) and its value decays with iterations
             this.m_dWeights[w] += learningRate * influence * (target[w] - this.m_dWeights[w]); //influence is the topological neighbourhood. also not constant through iterations
         }                                                                       //https://youtu.be/g8O6e9C_CfY?t=584 for reference of this weight update function.

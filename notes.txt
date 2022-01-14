@@ -1,6 +1,10 @@
 in node.js -> calculateDistance function, why not sq root ? 
 
+in som.js, -> epoch function, at the end the learningRate change equation should have timeconstant in denominator.
+
 the timeconstants for decay of learning rate and for decay of neighborhood size are different 
 in lectures and articles. maybe try adding different timeconstants for both 
 
 In node.js class . constructor parameters m_iRight and m_iBottom are probably redundent.Try removing
+
+At the end, use ES6 higher order array functions.
