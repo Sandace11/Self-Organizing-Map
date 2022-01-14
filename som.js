@@ -32,7 +32,7 @@ class Som {     //Class for defining SOMs.
         let LowestDistance = 999999;
 
         for (let n = 0; n < this.nodes.length; ++n) {
-            let dist = nodes[n].CalculateDistance(currentInputVector);
+            let dist = this.nodes[n].calculateDistance(currentInputVector);
             if (dist < LowestDistance) {
                 LowestDistance = dist;
                 winner = this.nodes[n];
@@ -52,14 +52,14 @@ class Som {     //Class for defining SOMs.
         if (data[0].length != constSizeOfInputVector)
             return false;     //Make sure that provided data vector has the same number of elements that is specified in constants.js
 
-        if (done)       //If numOfIterations left is 0, then training is done. so return
+        if (this.done)       //If numOfIterations left is 0, then training is done. so return
             return true;
 
         if (--this.numOfIterationLeft > 0) {    //Training portion for this epoch. if noOfIterationsLeft is 0, goto else statement
 
-            const currentInputVectorIndex = RandInt(0, data.length - 1);    //select random data(index to be exact) vector from the dataset
-
-            this.winningNode = findBestMatchingNode(data[currentInputVectorIndex]); //get the winning node for the given input
+            const currentInputVectorIndex = randInt(0, data.length - 1);    //select random data(index to be exact) vector from the dataset
+            console.log(this.winningNode);
+            this.winningNode = this.findBestMatchingNode(data[currentInputVectorIndex]); //get the winning node for the given input
 
             // neighborhoodSize calculation
             this.neighbourhoodRadius = this.mapRadius * Math.exp(-this.iterationCount / this.timeConstant);
@@ -69,8 +69,8 @@ class Som {     //Class for defining SOMs.
 
                 //S(j,I(x))^2 part of eqn. i.e.  lateral distance betn winning node and each node. 
                 //Square of euclidean distance betn winning node and each node. 
-                const distToWinningNodeSquared = ((this.winningNode.m_dx - nodes[n].m_dx) * (this.winningNode.m_dx - nodes[n].m_dx))
-                    + ((this.winningNode.m_dy - nodes[n].m_dy) * (this.winningNode.m_dy - nodes[n].m_dy));
+                const distToWinningNodeSquared = ((this.winningNode.m_dx - this.nodes[n].m_dx) * (this.winningNode.m_dx - this.nodes[n].m_dx))
+                    + ((this.winningNode.m_dy - this.nodes[n].m_dy) * (this.winningNode.m_dy - this.nodes[n].m_dy));
 
 
                 // check if node[n] lies within the neighbourhood radius
@@ -79,11 +79,12 @@ class Som {     //Class for defining SOMs.
                     // Follows a gaussian distribution. Weights are adjusted accordingly
                     this.influence = exp(-(distToWinningNodeSquared) / (2 * this.neighbourhoodRadius * this.neighbourhoodRadius));
 
-                    nodes[n].adjustWeights(data[currentInputVectorIndex],
+                    this.nodes[n].adjustWeights(data[currentInputVectorIndex],
                         this.learningRate,
                         this.influence);
                 }
             }
+            this.render();
 
             // For the next iteration, decay in learning rate
             this.learningRate = constStartLearningRate * exp(-this.iterationCount / this.numOfIterationLeft);
