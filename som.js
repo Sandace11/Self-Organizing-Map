@@ -27,8 +27,19 @@ class Som {     //Class for defining SOMs.
 
     }
 
-    findBestMatchingNode() {
-        1;
+    findBestMatchingNode(currentInputVector) {
+        let winner;
+        let LowestDistance = 999999;
+
+        for (let n = 0; n < this.nodes.length; ++n) {
+            let dist = nodes[n].CalculateDistance(currentInputVector);
+            if (dist < LowestDistance) {
+                LowestDistance = dist;
+                winner = this.nodes[n];
+            }
+        }
+
+        return winner;
     }
 
     render() {      //here the render() function of each node in the SOM is called to render the whole SOM
@@ -41,13 +52,11 @@ class Som {     //Class for defining SOMs.
         if (data[0].length != constSizeOfInputVector)
             return false;     //Make sure that provided data vector has the same number of elements that is specified in constants.js
 
-        
         if (done)       //If numOfIterations left is 0, then training is done. so return
             return true;
 
-        
         if (--this.numOfIterationLeft > 0) {    //Training portion for this epoch. if noOfIterationsLeft is 0, goto else statement
-            
+
             const currentInputVectorIndex = RandInt(0, data.length - 1);    //select random data(index to be exact) vector from the dataset
 
             this.winningNode = findBestMatchingNode(data[currentInputVectorIndex]); //get the winning node for the given input
@@ -57,7 +66,7 @@ class Som {     //Class for defining SOMs.
 
             //Adjust weights of winning node and its neighbours. So loop through each node in lattice(SOM)
             for (let n = 0; n < this.nodes.length; ++n) {
-                
+
                 //S(j,I(x))^2 part of eqn. i.e.  lateral distance betn winning node and each node. 
                 //Square of euclidean distance betn winning node and each node. 
                 const distToWinningNodeSquared = ((this.winningNode.m_dx - nodes[n].m_dx) * (this.winningNode.m_dx - nodes[n].m_dx))
