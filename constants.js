@@ -1,5 +1,5 @@
-const constWindowWidth = 800; //width of the window
-const constWindowHeight = 800; //height of the window 
+const constWindowWidth = 400; //width of the window
+const constWindowHeight = 400; //height of the window 
 
 const constNumCellsAcross = 40; // No of nodes in each row
 const constNumCellsDown = 40;   //No of nodes in each column
