@@ -1,5 +1,5 @@
 let som1;
-let trainingSet = [];
+let trainingSet = [];   //Temporary : dataset array
 
 let red = [];
 let green = [];
@@ -51,31 +51,22 @@ trainingSet.push(purple);
 trainingSet.push(dk_green);
 trainingSet.push(dk_blue);
 
-let train;
 
-function setup() {
-    createCanvas(constWindowWidth, constWindowHeight);
+
+function setup() {      //Setup function
+    createCanvas(constWindowWidth, constWindowHeight);  //initialize canvas
     background(100);
 
-    som1 = new Som();
-
-    train = function () {
-        if (!som1.done) {
-            if (!som1.epoch(trainingSet)) {
-                return false;
-            }
-        }
-        return true;
-    }
+    som1 = new Som();   //intantiate Som object
 }
 
-function draw() {
-
-    if (!som1.done) {
-        if (!train()) {
-            som1.render();
+function draw() {   //Main loop
+    //When trained for given no of iterations, som1.done == true
+    if (!som1.done) {    
+        if (!som1.epoch(trainingSet)) { // one iteration of training
+            console.log("Epoch Failed");
         }
-    } else {
+    } else {    //When training is completed stop main loop
         console.log("Done");
         noLoop();
     }

@@ -1,8 +1,8 @@
-const constWindowWidth = 400; //width of the window
-const constWindowHeight = 400; //height of the window 
+const constWindowWidth = 800; //width of the window
+const constWindowHeight = 800; //height of the window 
 
-const constNumCellsAcross = 40;
-const constNumCellsDown = 40;
+const constNumCellsAcross = 40; // No of nodes in each row
+const constNumCellsDown = 40;   //No of nodes in each column
 
 const constCellWidth = constWindowWidth/constNumCellsAcross;
 const constCellHeight = constWindowHeight/constNumCellsDown;
@@ -13,7 +13,7 @@ const constCellHeight = constWindowHeight/constNumCellsDown;
 const constSizeOfInputVector = 3;
 
 //the number of epochs desired for the training
-const constNumIterations = 500;
+const constNumIterations = 1500;
 
 //the value of the learning rate at the start of training
 const constStartLearningRate = 0.1;
