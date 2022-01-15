@@ -13,7 +13,7 @@ const constCellHeight = constWindowHeight/constNumCellsDown;
 const constSizeOfInputVector = 3;
 
 //the number of epochs desired for the training
-const constNumIterations = 1000;
+const constNumIterations = 500;
 
 //the value of the learning rate at the start of training
 const constStartLearningRate = 0.1;

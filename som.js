@@ -7,7 +7,7 @@ class Som {     //Class for defining SOMs.
         this.timeConstant = constNumIterations / Math.log(this.mapRadius);  //Constant . used in calculation of neighborhood radius
         this.iterationCount = 1;  //current iteration count .Note that iteration count increases from 1,2,3....
         this.numOfIterationLeft = constNumIterations;  //Number of iterations left in training. Note starts at constNumIterations.
-        this.neighbourhoodRadius;  //current neighbourhood radius
+        this.neighbourhoodRadius = this.mapRadius;  //current neighbourhood radius
         this.influence; //this is the topological neighbourhood.
         //this eqn : https://youtu.be/g8O6e9C_CfY?t=497
 
@@ -24,7 +24,6 @@ class Som {     //Class for defining SOMs.
                     constSizeOfInputVector));   // num weights
             }
         }
-
     }
 
     findBestMatchingNode(currentInputVector) {
@@ -38,7 +37,6 @@ class Som {     //Class for defining SOMs.
                 winner = this.nodes[n];
             }
         }
-
         return winner;
     }
 
@@ -54,13 +52,10 @@ class Som {     //Class for defining SOMs.
 
         if (this.done)       //If numOfIterations left is 0, then training is done. so return
             return true;
-
         if (--this.numOfIterationLeft > 0) {    //Training portion for this epoch. if noOfIterationsLeft is 0, goto else statement
 
             const currentInputVectorIndex = randInt(0, data.length - 1);    //select random data(index to be exact) vector from the dataset
-            console.log(this.winningNode);
             this.winningNode = this.findBestMatchingNode(data[currentInputVectorIndex]); //get the winning node for the given input
-
             // neighborhoodSize calculation
             this.neighbourhoodRadius = this.mapRadius * Math.exp(-this.iterationCount / this.timeConstant);
 
@@ -71,7 +66,6 @@ class Som {     //Class for defining SOMs.
                 //Square of euclidean distance betn winning node and each node. 
                 const distToWinningNodeSquared = ((this.winningNode.m_dx - this.nodes[n].m_dx) * (this.winningNode.m_dx - this.nodes[n].m_dx))
                     + ((this.winningNode.m_dy - this.nodes[n].m_dy) * (this.winningNode.m_dy - this.nodes[n].m_dy));
-
 
                 // check if node[n] lies within the neighbourhood radius
                 if (distToWinningNodeSquared < (this.neighbourhoodRadius * this.neighbourhoodRadius)) {
@@ -88,18 +82,15 @@ class Som {     //Class for defining SOMs.
 
             // For the next iteration, decay in learning rate
             this.learningRate = constStartLearningRate * exp(-this.iterationCount / this.numOfIterationLeft);
+            // this.learningRate = constStartLearningRate * exp(-this.iterationCount / this.timeConstant);
 
             ++this.iterationCount;
 
         } else {    //if noOfIterationsLeft is 0
-            done = true;
+            this.done = true;
         }
 
         return true;    //Successfully trained in this epoch
     }
-
-    // finishedTraining() {    //Use som1.done directly. redundent
-    //     return this.done;
-    // }
 
 }

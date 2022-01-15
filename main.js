@@ -1,5 +1,3 @@
-console.log("main.js");
-
 let som1;
 let trainingSet = [];
 
@@ -53,7 +51,6 @@ trainingSet.push(purple);
 trainingSet.push(dk_green);
 trainingSet.push(dk_blue);
 
-let bDone;
 let train;
 
 function setup() {
@@ -61,14 +58,8 @@ function setup() {
     background(100);
 
     som1 = new Som();
-    som1.render();
 
-    // noLoop();
-    frameRate(2);
-
-    bDone = false;
-
-    train = function() {
+    train = function () {
         if (!som1.done) {
             if (!som1.epoch(trainingSet)) {
                 return false;
@@ -79,27 +70,13 @@ function setup() {
 }
 
 function draw() {
-    log(frameCount);
 
-    if(!bDone) {
-        if (!som1.done) {
-            if (!train()) {
-                som1.render();
-                bDone = true;  // quit if there is a problem
-            }
+    if (!som1.done) {
+        if (!train()) {
+            som1.render();
         }
-
     } else {
-        som1.render();
+        console.log("Done");
+        noLoop();
     }
-
-
-
-
-
-
-
-
-
-
 }
