@@ -3,13 +3,12 @@ class Som {     //Class for defining SOMs.
     constructor() {
         this.nodes = [];      //array of all the nodes in this SOM
         this.winningNode;   //Winning node for each iteration
-        this.mapRadius = Math.max(constWindowWidth, constWindowHeight) / 2;  //initial topological radius. Set to the higher value among window width and height.
+        this.mapRadius = constInitialTopologicalRadius;  //initial topological radius. Defined in constants.js
         this.timeConstant = constNumIterations / Math.log(this.mapRadius);  //Constant . used in calculation of neighborhood radius
         this.iterationCount = 1;  //current iteration count .Note that iteration count increases from 1,2,3....
         this.numOfIterationLeft = constNumIterations;  //Number of iterations left in training. Note: starts at constNumIterations and decreases down to 0
         this.neighbourhoodRadius = this.mapRadius;  //current neighbourhood radius
-        this.influence; //this is the topological neighbourhood.
-        //this eqn : https://youtu.be/g8O6e9C_CfY?t=497
+        this.influence; //this is the topological neighbourhood. Equation : https://youtu.be/g8O6e9C_CfY?t=497
 
         this.learningRate = constStartLearningRate; //current learning rate. initially set to constStartLearningRate  
         this.done = false; //true when training is completed. i.e when specified no of iterations are finished

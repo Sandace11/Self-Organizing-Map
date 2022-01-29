@@ -17,3 +17,6 @@ const constNumIterations = 1500;
 
 //the value of the learning rate at the start of training
 const constStartLearningRate = 0.1;
+
+ //initial topological radius. Set to the higher value among window width and height divided by 2.
+const constInitialTopologicalRadius = Math.max(constWindowWidth, constWindowHeight) / 2; 
