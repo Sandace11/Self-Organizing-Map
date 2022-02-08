@@ -1,0 +1,23 @@
+{
+  "name": "self-organizing-map",
+  "version": "1.0.0",
+  "description": "Implementation of Kohonen's Self Organising Feature Map or SOM.\r # Demo\r [Sandace11.github.io/Self-Organizing-Map](https://sandace11.github.io/Self-Organizing-Map/index.html)\r # Resources and References\r  - [Kohonen's Self Organizing Feature Maps - ai-junkie](http://www.ai-junkie.com/ann/som/som1.html)\r  - [Description of Kohonen's Self-Organizing Map - Timo Honkela](http://www.mlab.uiah.fi/~timo/som/thesis-som.html)\r  - [Self-Organizing Maps Intuition Video](https://youtu.be/g8O6e9C_CfY?t=544)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sandace11/Self-Organizing-Map.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sandace11/Self-Organizing-Map/issues"
+  },
+  "homepage": "https://github.com/Sandace11/Self-Organizing-Map#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
+}

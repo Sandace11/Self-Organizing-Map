@@ -1,11 +1,14 @@
 let som1;
-let trainingSet = createTempData();   //Temporary : dataset array
+// let trainingSet = createTempData();   //Temporary : dataset array
+let trainingSet = createData();
 
 function setup() {      //Setup function
     createCanvas(constWindowWidth, constWindowHeight + 200);  //initialize canvas
     background(255);
 
-    som1 = new Som();   //instantiate Som object
+    som1 = new Som(constNumCellsDown, constNumCellsAcross,                      //instantiate Som object
+        constSizeOfInputVector, constInitialTopologicalRadius,
+        constStartLearningRate);
     // noLoop();
 }
 

@@ -19,7 +19,9 @@ class Node {
         red = this.m_dWeights[0] * 255;
         green = this.m_dWeights[1] * 255;
         blue = this.m_dWeights[2] * 255;
+        // alpha = this.m_dWeights[3] * 255;
         fill(red, green, blue);
+        // fill((red+green+blue)/3);
         rect(this.m_iLeft, this.m_iTop, constCellWidth, constCellHeight);
     }
 
