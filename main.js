@@ -1,6 +1,6 @@
 let som1;
-// let trainingSet = createTempData();   //Temporary : dataset array
-let trainingSet = createData();
+let trainingSet = createData();   //Temporary : dataset array
+// let trainingSet = createData();
 
 function setup() {      //Setup function
     createCanvas(constWindowWidth, constWindowHeight + 200);  //initialize canvas

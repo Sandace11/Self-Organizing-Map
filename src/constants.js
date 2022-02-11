@@ -1,8 +1,8 @@
 const constWindowWidth = 400; //width of the window
 const constWindowHeight = 400; //height of the window 
 
-const constNumCellsAcross = 40; // No of nodes in each row
-const constNumCellsDown = 40;   //No of nodes in each column
+const constNumCellsAcross = 7; // No of nodes in each row
+const constNumCellsDown = 7;   //No of nodes in each column
 
 const constCellWidth = constWindowWidth/constNumCellsAcross;
 const constCellHeight = constWindowHeight/constNumCellsDown;
@@ -13,10 +13,10 @@ const constCellHeight = constWindowHeight/constNumCellsDown;
 const constSizeOfInputVector = 4;
 
 //the number of epochs desired for the training
-const constNumIterations = 1000;
+const constNumIterations = 5000;
 
 //the value of the learning rate at the start of training
-const constStartLearningRate = 0.12;
+const constStartLearningRate = 0.1;
 
  //initial topological radius. Set to the higher value among window width and height divided by 2.
 const constInitialTopologicalRadius = Math.max(constWindowWidth, constWindowHeight) / 2; 

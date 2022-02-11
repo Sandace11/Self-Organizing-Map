@@ -16,12 +16,20 @@ class Node {
     }
 
     render() {  //Render the node on the screen. p5 ko rect function use gareko. takes (topLeftKoX, topleftKoY, width, height)
-        red = this.m_dWeights[0] * 255;
-        green = this.m_dWeights[1] * 255;
-        blue = this.m_dWeights[2] * 255;
-        // alpha = this.m_dWeights[3] * 255;
-        fill(red, green, blue);
+        let w0 = this.m_dWeights[0];
+        let w1 = this.m_dWeights[1];
+        let w2 = this.m_dWeights[2];
+        let w3 = this.m_dWeights[3];
+        let m0 = (w0 + w1 + w2 + w3);
+        let m1 = (w0*w0 + w1*w1 + w2*w2 + w3*w3);
+        let m2 = (w0*w0*w0 + w1*w1*w1 + w2*w1*w1 + w3*w3*w3);
+        // m0 = m0 > 1? 1: m0;
+        // m1 = m1 > 1? 1: m1;
+        // m2 = m2 > 1? 1: m2;
+        fill(m0 * 255, m1 * 255, m2 * 255);
+        // fill(red, green, blue);
         // fill((red+green+blue)/3);
+        // fill(m * 255);
         rect(this.m_iLeft, this.m_iTop, constCellWidth, constCellHeight);
     }
 
