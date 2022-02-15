@@ -10,6 +10,7 @@ function setup() {      //Setup function
         constSizeOfInputVector, constInitialTopologicalRadius,
         constStartLearningRate);
     // noLoop();
+    // frameRate(5)
 }
 
 function draw() {   //Main loop
@@ -28,7 +29,7 @@ function draw() {   //Main loop
     textSize(20);
     text('learning rate : ' + som1.learningRate.toFixed(5), 10, constWindowHeight + 40, constWindowWidth, 30);
     text('No of iterations : ' + som1.numOfIterationLeft, 10, constWindowHeight + 70, constWindowWidth, 30);
-    text('Topological radius : ' + som1.neighbourhoodRadius.toFixed(3), 10, constWindowHeight + 100, constWindowWidth, 30);
+    text('Topological radius : ' + (som1.neighbourhoodRadius/constCellWidth).toFixed(3), 10, constWindowHeight + 100, constWindowWidth, 30);
     text('No of nodes : ' + constNumCellsAcross * constNumCellsDown, 10, constWindowHeight + 130, constWindowWidth, 30);
     text('Size of input vector : ' + constSizeOfInputVector, 10, constWindowHeight + 160, constWindowWidth, 30);
 
