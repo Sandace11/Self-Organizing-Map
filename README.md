@@ -3,7 +3,7 @@
    
    Initial parameters can be adjusted in [src/constants.js](https://github.com/Sandace11/Self-Organizing-Map/blob/main/src/constants.js)  
 # Demo
-   [Sandace11.github.io/Self-Organizing-Map](https://sandace11.github.io/Self-Organizing-Map/index.html)
+   [~~Sandace11.github.io/Self-Organizing-Map~~](https://sandace11.github.io/Self-Organizing-Map/index.html)
 # Resources and References
  - [Kohonen's Self Organizing Feature Maps - ai-junkie](http://www.ai-junkie.com/ann/som/som1.html)
  - [Description of Kohonen's Self-Organizing Map - Timo Honkela](http://www.mlab.uiah.fi/~timo/som/thesis-som.html)
