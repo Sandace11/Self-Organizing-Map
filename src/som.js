@@ -41,6 +41,8 @@ class Som {     //Class for defining SOMs.
 
     //render() function of each node in the SOM is called to render the whole SOM
     render() {
+
+        //              UNCOMMENT FOR UMATRIX
         // let map = new Array(constNumCellsDown);
         // for (let i = 0; i < constNumCellsDown; i++) {
         //     map[i] = new Array(constNumCellsAcross);
@@ -57,6 +59,8 @@ class Som {     //Class for defining SOMs.
         // u_matrix.forEach((val, index) => {
         //     this.nodes[index].uMatrixValue = val;
         // })
+
+
         strokeWeight(0.2);
         this.nodes.forEach(node => {
             node.render();  //Call render function of each node
@@ -64,7 +68,7 @@ class Som {     //Class for defining SOMs.
 
     }
 
-    //Epoch is the training done in one iteration. Needs to be called constNumIterations(1000 to 2000) number of times
+    //Epoch is the training done in one iteration. Needs to be called constNumIterations(as set in constants.js) number of times
     epoch(data) {
         if (data[0].length != this.inputSize)
             return false;     //Make sure that provided data vector has the same number of elements that is specified in constants.js

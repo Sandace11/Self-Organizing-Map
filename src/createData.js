@@ -1,18 +1,18 @@
 
 function createData() {
-    let trainingSet = irisData;
+    let trainingSet = irisData;     //dataNormalized.JS
     trainingSet.forEach(e => {
         e.shift();
     })
     
     trainingSet.forEach(e => {
         for (let i = 0; i < e.length; i++) {
-            e[i] = e[i].toFixed(4) * 1;
+            e[i] = e[i].toFixed(5) * 1;
         }
     })
-    
+
+    //                  OLD RGB DATA DATASET
     // let trainingSet = [];   //Temporary : dataset array
-    
     // let red = [];
     // let green = [];
     // let blue = [];
@@ -30,7 +30,6 @@ function createData() {
     // yellow.push(1, 1, 0.2);
     // orange.push(1, 0.4, 0.25);
     // purple.push(1, 0, 1);
-
     // trainingSet.push(red, green, blue, yellow, orange, purple, dk_green, dk_blue);
     
     return trainingSet;

@@ -1,6 +1,5 @@
 let som1;
 let trainingSet = createData();   //Temporary : dataset array
-// let trainingSet = createData();
 
 function setup() {      //Setup function
     createCanvas(constWindowWidth, constWindowHeight + 200);  //initialize canvas
@@ -23,14 +22,13 @@ function draw() {   //Main loop
     } else {    //When training is completed stop main loop
         console.log("Done");
         som1.render();
-        noLoop();
+        noLoop();   //stop main loop
     }
     fill(0, 102, 153);
-    textSize(20);
-    text('learning rate : ' + som1.learningRate.toFixed(5), 10, constWindowHeight + 40, constWindowWidth, 30);
+    textSize(18);
+    text('Learning rate : ' + som1.learningRate.toFixed(5), 10, constWindowHeight + 40, constWindowWidth, 30);
     text('No of iterations : ' + som1.numOfIterationLeft, 10, constWindowHeight + 70, constWindowWidth, 30);
-    text('Topological radius : ' + (som1.neighbourhoodRadius/constCellWidth).toFixed(3), 10, constWindowHeight + 100, constWindowWidth, 30);
+    text('Topological radius : ' + (som1.neighbourhoodRadius / constCellWidth).toFixed(3), 10, constWindowHeight + 100, constWindowWidth, 30);
     text('No of nodes : ' + constNumCellsAcross * constNumCellsDown, 10, constWindowHeight + 130, constWindowWidth, 30);
     text('Size of input vector : ' + constSizeOfInputVector, 10, constWindowHeight + 160, constWindowWidth, 30);
-
 }
