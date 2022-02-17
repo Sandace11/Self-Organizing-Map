@@ -43,22 +43,22 @@ class Som {     //Class for defining SOMs.
     render() {
 
         //              UNCOMMENT FOR UMATRIX
-        // let map = new Array(constNumCellsDown);
-        // for (let i = 0; i < constNumCellsDown; i++) {
-        //     map[i] = new Array(constNumCellsAcross);
-        // }
-        // let index = 0;
-        // for (let i = 0; i < constNumCellsDown; i++) {
-        //     for (let j = 0; j < constNumCellsAcross; j++) {
-        //         map[i][j] = this.nodes[index].m_dWeights
-        //         index++;
-        //     }
-        // }
-        // let u_matrix = createUMatrix(constNumCellsDown, constNumCellsAcross, map);
+        let map = new Array(constNumCellsDown);
+        for (let i = 0; i < constNumCellsDown; i++) {
+            map[i] = new Array(constNumCellsAcross);
+        }
+        let index = 0;
+        for (let i = 0; i < constNumCellsDown; i++) {
+            for (let j = 0; j < constNumCellsAcross; j++) {
+                map[i][j] = this.nodes[index].m_dWeights
+                index++;
+            }
+        }
+        let u_matrix = createUMatrix(constNumCellsDown, constNumCellsAcross, map);
 
-        // u_matrix.forEach((val, index) => {
-        //     this.nodes[index].uMatrixValue = val;
-        // })
+        u_matrix.forEach((val, index) => {
+            this.nodes[index].uMatrixValue = val;
+        })
 
 
         strokeWeight(0.2);
