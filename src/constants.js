@@ -13,11 +13,11 @@ const constCellHeight = constWindowHeight/constNumCellsDown;
 const constSizeOfInputVector = 4;
 
 //the number of epochs desired for the training
-const constNumIterations = 2000;
+const constNumIterations = 4000;
 //2000
 
 //the value of the learning rate at the start of training
-const constStartLearningRate = 0.2;
+const constStartLearningRate = 0.15;
 //0.4 - 0.5 for Umatrix??
 
  //initial topological radius. Set to the higher value among window width and height divided by 2.
