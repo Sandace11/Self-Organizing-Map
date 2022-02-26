@@ -4,14 +4,14 @@ const results = [];
 
 function csvToJSON() {
 
-    fs.createReadStream('sandNormalized.csv')
+    fs.createReadStream('./countriesCSVNormalized.csv')
         .pipe(csv())
         .on('data', (data) => results.push(data))
         .on('end', () => {
             console.log("Parsed!");
             console.log(results[0]);
             const dataJSON = JSON.stringify(results);  //convert object to JSON 
-            fs.writeFileSync("./dataNormalized.json", dataJSON);
+            fs.writeFileSync("./countriesNormalized.json", dataJSON);
         });
 
 }

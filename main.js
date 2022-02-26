@@ -39,8 +39,11 @@ function draw() {   //Main loop
     y = constrain(y, 0, constNumCellsDown - 1)
 
     fill(255, 20, 20);
-    text(`Wt of Node (${x}, ${y})`, 250, constWindowHeight + 40, constWindowWidth, 30);
+    text(`Wt of Node (${x}, ${y})`, 240, constWindowHeight + 40, constWindowWidth, 30);
     som1.nodes[x + y * constNumCellsAcross].m_dWeights.forEach((weight, index) => {
-        text(`${index} : ${weight.toFixed(3)}`, 300, constWindowHeight + 70 + index * 30, constWindowWidth, 30)
+        index == 0 ? text('gdpp', 250, constWindowHeight + 70 + index * 30, constWindowWidth, 30) : 1;
+        index == 1 ? text('income', 230, constWindowHeight + 70 + index * 30, constWindowWidth, 30) : 1;
+        index == 2 ? text('child_mort', 200, constWindowHeight + 70 + index * 30, constWindowWidth, 30) : 1;
+        text(`: ${weight.toFixed(3)}`, 300, constWindowHeight + 70 + index * 30, constWindowWidth, 30)
     })
 }

@@ -1,0 +1,669 @@
+[{
+    "gdpp": "553",
+    "income": "1610",
+    "child_mort": "90.2"
+}, {
+    "gdpp": "4090",
+    "income": "9930",
+    "child_mort": "16.6"
+}, {
+    "gdpp": "4460",
+    "income": "12900",
+    "child_mort": "27.3"
+}, {
+    "gdpp": "3530",
+    "income": "5900",
+    "child_mort": "119"
+}, {
+    "gdpp": "12200",
+    "income": "19100",
+    "child_mort": "10.3"
+}, {
+    "gdpp": "10300",
+    "income": "18700",
+    "child_mort": "14.5"
+}, {
+    "gdpp": "3220",
+    "income": "6700",
+    "child_mort": "18.1"
+}, {
+    "gdpp": "51900",
+    "income": "41400",
+    "child_mort": "4.8"
+}, {
+    "gdpp": "46900",
+    "income": "43200",
+    "child_mort": "4.3"
+}, {
+    "gdpp": "5840",
+    "income": "16000",
+    "child_mort": "39.2"
+}, {
+    "gdpp": "28000",
+    "income": "22900",
+    "child_mort": "13.8"
+}, {
+    "gdpp": "20700",
+    "income": "41100",
+    "child_mort": "8.6"
+}, {
+    "gdpp": "758",
+    "income": "2440",
+    "child_mort": "49.4"
+}, {
+    "gdpp": "16000",
+    "income": "15300",
+    "child_mort": "14.2"
+}, {
+    "gdpp": "6030",
+    "income": "16200",
+    "child_mort": "5.5"
+}, {
+    "gdpp": "44400",
+    "income": "41100",
+    "child_mort": "4.5"
+}, {
+    "gdpp": "4340",
+    "income": "7880",
+    "child_mort": "18.8"
+}, {
+    "gdpp": "758",
+    "income": "1820",
+    "child_mort": "111"
+}, {
+    "gdpp": "2180",
+    "income": "6420",
+    "child_mort": "42.7"
+}, {
+    "gdpp": "1980",
+    "income": "5410",
+    "child_mort": "46.6"
+}, {
+    "gdpp": "4610",
+    "income": "9720",
+    "child_mort": "6.9"
+}, {
+    "gdpp": "6350",
+    "income": "13300",
+    "child_mort": "52.5"
+}, {
+    "gdpp": "11200",
+    "income": "14500",
+    "child_mort": "19.8"
+}, {
+    "gdpp": "35300",
+    "income": "80600",
+    "child_mort": "10.5"
+}, {
+    "gdpp": "6840",
+    "income": "15300",
+    "child_mort": "10.8"
+}, {
+    "gdpp": "575",
+    "income": "1430",
+    "child_mort": "116"
+}, {
+    "gdpp": "231",
+    "income": "764",
+    "child_mort": "93.6"
+}, {
+    "gdpp": "786",
+    "income": "2520",
+    "child_mort": "44.4"
+}, {
+    "gdpp": "1310",
+    "income": "2660",
+    "child_mort": "108"
+}, {
+    "gdpp": "47400",
+    "income": "40700",
+    "child_mort": "5.6"
+}, {
+    "gdpp": "3310",
+    "income": "5830",
+    "child_mort": "26.5"
+}, {
+    "gdpp": "446",
+    "income": "888",
+    "child_mort": "149"
+}, {
+    "gdpp": "897",
+    "income": "1930",
+    "child_mort": "150"
+}, {
+    "gdpp": "12900",
+    "income": "19400",
+    "child_mort": "8.7"
+}, {
+    "gdpp": "4560",
+    "income": "9530",
+    "child_mort": "15.7"
+}, {
+    "gdpp": "6250",
+    "income": "10900",
+    "child_mort": "18.6"
+}, {
+    "gdpp": "769",
+    "income": "1410",
+    "child_mort": "88.2"
+}, {
+    "gdpp": "334",
+    "income": "609",
+    "child_mort": "116"
+}, {
+    "gdpp": "2740",
+    "income": "5190",
+    "child_mort": "63.9"
+}, {
+    "gdpp": "8200",
+    "income": "13000",
+    "child_mort": "10.2"
+}, {
+    "gdpp": "1220",
+    "income": "2690",
+    "child_mort": "111"
+}, {
+    "gdpp": "13500",
+    "income": "20100",
+    "child_mort": "5.5"
+}, {
+    "gdpp": "30800",
+    "income": "33900",
+    "child_mort": "3.6"
+}, {
+    "gdpp": "19800",
+    "income": "28300",
+    "child_mort": "3.4"
+}, {
+    "gdpp": "58000",
+    "income": "44000",
+    "child_mort": "4.1"
+}, {
+    "gdpp": "5450",
+    "income": "11100",
+    "child_mort": "34.4"
+}, {
+    "gdpp": "4660",
+    "income": "9350",
+    "child_mort": "25.1"
+}, {
+    "gdpp": "2600",
+    "income": "9860",
+    "child_mort": "29.1"
+}, {
+    "gdpp": "2990",
+    "income": "7300",
+    "child_mort": "19.2"
+}, {
+    "gdpp": "17100",
+    "income": "33700",
+    "child_mort": "111"
+}, {
+    "gdpp": "482",
+    "income": "1420",
+    "child_mort": "55.2"
+}, {
+    "gdpp": "14600",
+    "income": "22700",
+    "child_mort": "4.5"
+}, {
+    "gdpp": "3650",
+    "income": "7350",
+    "child_mort": "24.1"
+}, {
+    "gdpp": "46200",
+    "income": "39800",
+    "child_mort": "3"
+}, {
+    "gdpp": "40600",
+    "income": "36900",
+    "child_mort": "4.2"
+}, {
+    "gdpp": "8750",
+    "income": "15400",
+    "child_mort": "63.7"
+}, {
+    "gdpp": "562",
+    "income": "1660",
+    "child_mort": "80.3"
+}, {
+    "gdpp": "2960",
+    "income": "6730",
+    "child_mort": "16.5"
+}, {
+    "gdpp": "41800",
+    "income": "40400",
+    "child_mort": "4.2"
+}, {
+    "gdpp": "1310",
+    "income": "3060",
+    "child_mort": "74.7"
+}, {
+    "gdpp": "26900",
+    "income": "28700",
+    "child_mort": "3.9"
+}, {
+    "gdpp": "7370",
+    "income": "11200",
+    "child_mort": "14.6"
+}, {
+    "gdpp": "2830",
+    "income": "6710",
+    "child_mort": "35.4"
+}, {
+    "gdpp": "648",
+    "income": "1190",
+    "child_mort": "109"
+}, {
+    "gdpp": "547",
+    "income": "1390",
+    "child_mort": "114"
+}, {
+    "gdpp": "3040",
+    "income": "5840",
+    "child_mort": "37.6"
+}, {
+    "gdpp": "662",
+    "income": "1500",
+    "child_mort": "208"
+}, {
+    "gdpp": "13100",
+    "income": "22300",
+    "child_mort": "6"
+}, {
+    "gdpp": "41900",
+    "income": "38800",
+    "child_mort": "2.6"
+}, {
+    "gdpp": "1350",
+    "income": "4410",
+    "child_mort": "58.8"
+}, {
+    "gdpp": "3110",
+    "income": "8430",
+    "child_mort": "33.3"
+}, {
+    "gdpp": "6530",
+    "income": "17400",
+    "child_mort": "19.3"
+}, {
+    "gdpp": "4500",
+    "income": "12700",
+    "child_mort": "36.9"
+}, {
+    "gdpp": "48700",
+    "income": "45700",
+    "child_mort": "4.2"
+}, {
+    "gdpp": "30600",
+    "income": "29600",
+    "child_mort": "4.6"
+}, {
+    "gdpp": "35800",
+    "income": "36200",
+    "child_mort": "4"
+}, {
+    "gdpp": "4680",
+    "income": "8000",
+    "child_mort": "18.1"
+}, {
+    "gdpp": "44500",
+    "income": "35800",
+    "child_mort": "3.2"
+}, {
+    "gdpp": "3680",
+    "income": "9470",
+    "child_mort": "21.1"
+}, {
+    "gdpp": "9070",
+    "income": "20100",
+    "child_mort": "21.5"
+}, {
+    "gdpp": "967",
+    "income": "2480",
+    "child_mort": "62.2"
+}, {
+    "gdpp": "1490",
+    "income": "1730",
+    "child_mort": "62.7"
+}, {
+    "gdpp": "38500",
+    "income": "75200",
+    "child_mort": "10.8"
+}, {
+    "gdpp": "880",
+    "income": "2790",
+    "child_mort": "29.6"
+}, {
+    "gdpp": "1140",
+    "income": "3980",
+    "child_mort": "78.9"
+}, {
+    "gdpp": "11300",
+    "income": "18300",
+    "child_mort": "7.8"
+}, {
+    "gdpp": "8860",
+    "income": "16300",
+    "child_mort": "10.3"
+}, {
+    "gdpp": "1170",
+    "income": "2380",
+    "child_mort": "99.7"
+}, {
+    "gdpp": "327",
+    "income": "700",
+    "child_mort": "89.3"
+}, {
+    "gdpp": "12100",
+    "income": "29600",
+    "child_mort": "16.6"
+}, {
+    "gdpp": "12000",
+    "income": "21100",
+    "child_mort": "6.1"
+}, {
+    "gdpp": "105000",
+    "income": "91700",
+    "child_mort": "2.8"
+}, {
+    "gdpp": "4540",
+    "income": "11400",
+    "child_mort": "10.4"
+}, {
+    "gdpp": "413",
+    "income": "1390",
+    "child_mort": "62.2"
+}, {
+    "gdpp": "459",
+    "income": "1030",
+    "child_mort": "90.5"
+}, {
+    "gdpp": "9070",
+    "income": "21100",
+    "child_mort": "7.9"
+}, {
+    "gdpp": "7100",
+    "income": "10500",
+    "child_mort": "13.2"
+}, {
+    "gdpp": "708",
+    "income": "1870",
+    "child_mort": "137"
+}, {
+    "gdpp": "21100",
+    "income": "28300",
+    "child_mort": "6.8"
+}, {
+    "gdpp": "1200",
+    "income": "3320",
+    "child_mort": "97.4"
+}, {
+    "gdpp": "8000",
+    "income": "15900",
+    "child_mort": "15"
+}, {
+    "gdpp": "2860",
+    "income": "3340",
+    "child_mort": "40"
+}, {
+    "gdpp": "1630",
+    "income": "3910",
+    "child_mort": "17.2"
+}, {
+    "gdpp": "2650",
+    "income": "7710",
+    "child_mort": "26.1"
+}, {
+    "gdpp": "6680",
+    "income": "14000",
+    "child_mort": "6.8"
+}, {
+    "gdpp": "2830",
+    "income": "6440",
+    "child_mort": "33.5"
+}, {
+    "gdpp": "419",
+    "income": "918",
+    "child_mort": "101"
+}, {
+    "gdpp": "988",
+    "income": "3720",
+    "child_mort": "64.4"
+}, {
+    "gdpp": "5190",
+    "income": "8460",
+    "child_mort": "56"
+}, {
+    "gdpp": "592",
+    "income": "1990",
+    "child_mort": "47"
+}, {
+    "gdpp": "50300",
+    "income": "45500",
+    "child_mort": "4.5"
+}, {
+    "gdpp": "33700",
+    "income": "32300",
+    "child_mort": "6.2"
+}, {
+    "gdpp": "348",
+    "income": "814",
+    "child_mort": "123"
+}, {
+    "gdpp": "2330",
+    "income": "5150",
+    "child_mort": "130"
+}, {
+    "gdpp": "87800",
+    "income": "62300",
+    "child_mort": "3.2"
+}, {
+    "gdpp": "19300",
+    "income": "45300",
+    "child_mort": "11.7"
+}, {
+    "gdpp": "1040",
+    "income": "4280",
+    "child_mort": "92.1"
+}, {
+    "gdpp": "8080",
+    "income": "15400",
+    "child_mort": "19.7"
+}, {
+    "gdpp": "3230",
+    "income": "7290",
+    "child_mort": "24.1"
+}, {
+    "gdpp": "5020",
+    "income": "9960",
+    "child_mort": "20.3"
+}, {
+    "gdpp": "2130",
+    "income": "5600",
+    "child_mort": "31.9"
+}, {
+    "gdpp": "12600",
+    "income": "21800",
+    "child_mort": "6"
+}, {
+    "gdpp": "22500",
+    "income": "27200",
+    "child_mort": "3.9"
+}, {
+    "gdpp": "70300",
+    "income": "125000",
+    "child_mort": "9"
+}, {
+    "gdpp": "8230",
+    "income": "17800",
+    "child_mort": "11.5"
+}, {
+    "gdpp": "10700",
+    "income": "23100",
+    "child_mort": "10"
+}, {
+    "gdpp": "563",
+    "income": "1350",
+    "child_mort": "63.6"
+}, {
+    "gdpp": "3450",
+    "income": "5400",
+    "child_mort": "18.9"
+}, {
+    "gdpp": "19300",
+    "income": "45400",
+    "child_mort": "15.7"
+}, {
+    "gdpp": "1000",
+    "income": "2180",
+    "child_mort": "66.8"
+}, {
+    "gdpp": "5410",
+    "income": "12700",
+    "child_mort": "7.6"
+}, {
+    "gdpp": "10800",
+    "income": "20400",
+    "child_mort": "14.4"
+}, {
+    "gdpp": "399",
+    "income": "1220",
+    "child_mort": "160"
+}, {
+    "gdpp": "46600",
+    "income": "72100",
+    "child_mort": "2.8"
+}, {
+    "gdpp": "16600",
+    "income": "25200",
+    "child_mort": "7"
+}, {
+    "gdpp": "23400",
+    "income": "28700",
+    "child_mort": "3.2"
+}, {
+    "gdpp": "1290",
+    "income": "1780",
+    "child_mort": "28.1"
+}, {
+    "gdpp": "7280",
+    "income": "12000",
+    "child_mort": "53.7"
+}, {
+    "gdpp": "22100",
+    "income": "30400",
+    "child_mort": "4.1"
+}, {
+    "gdpp": "30700",
+    "income": "32500",
+    "child_mort": "3.8"
+}, {
+    "gdpp": "2810",
+    "income": "8560",
+    "child_mort": "11.2"
+}, {
+    "gdpp": "6230",
+    "income": "9920",
+    "child_mort": "20.7"
+}, {
+    "gdpp": "1480",
+    "income": "3370",
+    "child_mort": "76.7"
+}, {
+    "gdpp": "8300",
+    "income": "14200",
+    "child_mort": "24.1"
+}, {
+    "gdpp": "52100",
+    "income": "42900",
+    "child_mort": "3"
+}, {
+    "gdpp": "74600",
+    "income": "55500",
+    "child_mort": "4.5"
+}, {
+    "gdpp": "738",
+    "income": "2110",
+    "child_mort": "52.4"
+}, {
+    "gdpp": "702",
+    "income": "2090",
+    "child_mort": "71.9"
+}, {
+    "gdpp": "5080",
+    "income": "13500",
+    "child_mort": "14.9"
+}, {
+    "gdpp": "3600",
+    "income": "1850",
+    "child_mort": "62.6"
+}, {
+    "gdpp": "488",
+    "income": "1210",
+    "child_mort": "90.3"
+}, {
+    "gdpp": "3550",
+    "income": "4980",
+    "child_mort": "17.4"
+}, {
+    "gdpp": "4140",
+    "income": "10400",
+    "child_mort": "17.4"
+}, {
+    "gdpp": "10700",
+    "income": "18000",
+    "child_mort": "19.1"
+}, {
+    "gdpp": "4440",
+    "income": "9940",
+    "child_mort": "62"
+}, {
+    "gdpp": "595",
+    "income": "1540",
+    "child_mort": "81"
+}, {
+    "gdpp": "2970",
+    "income": "7820",
+    "child_mort": "11.7"
+}, {
+    "gdpp": "35000",
+    "income": "57600",
+    "child_mort": "8.6"
+}, {
+    "gdpp": "38900",
+    "income": "36200",
+    "child_mort": "5.2"
+}, {
+    "gdpp": "48400",
+    "income": "49400",
+    "child_mort": "7.3"
+}, {
+    "gdpp": "11900",
+    "income": "17100",
+    "child_mort": "10.6"
+}, {
+    "gdpp": "1380",
+    "income": "4240",
+    "child_mort": "36.3"
+}, {
+    "gdpp": "2970",
+    "income": "2950",
+    "child_mort": "29.2"
+}, {
+    "gdpp": "13500",
+    "income": "16500",
+    "child_mort": "17.1"
+}, {
+    "gdpp": "1310",
+    "income": "4490",
+    "child_mort": "23.3"
+}, {
+    "gdpp": "1310",
+    "income": "4480",
+    "child_mort": "56.3"
+}, {
+    "gdpp": "1460",
+    "income": "3280",
+    "child_mort": "83.1"
+}]
