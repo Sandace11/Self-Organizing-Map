@@ -41,6 +41,10 @@ function draw() {   //Main loop
     fill(255, 20, 20);
     text(`Wt of Node (${x}, ${y})`, 250, constWindowHeight + 40, constWindowWidth, 30);
     som1.nodes[x + y * constNumCellsAcross].m_dWeights.forEach((weight, index) => {
-        text(`${index} : ${weight.toFixed(3)}`, 300, constWindowHeight + 70 + index * 30, constWindowWidth, 30)
+        index == 0 ? text('SepalLength', 230, constWindowHeight + 70 + index * 30, constWindowWidth, 30) : 1;
+        index == 1 ? text('SepalWidth', 230, constWindowHeight + 70 + index * 30, constWindowWidth, 30) : 1;
+        index == 2 ? text('PetalLength', 230, constWindowHeight + 70 + index * 30, constWindowWidth, 30) : 1;
+        index == 3 ? text('PetalWidth', 230, constWindowHeight + 70 + index * 30, constWindowWidth, 30) : 1;
+        text(`: ${weight.toFixed(3)}`, 340, constWindowHeight + 70 + index * 30, constWindowWidth, 30)
     })
 }
