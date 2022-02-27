@@ -63,7 +63,7 @@ class Node {
     //https://youtu.be/g8O6e9C_CfY?t=584 for reference of this weight update function. 
     adjustWeights(target, learningRate, influence) {
         for (let w = 0; w < target.length; w++) {
-            this.m_dWeights[w] += ((learningRate * influence * (target[w] - this.m_dWeights[w])) * 1).toFixed(2) * 1; // '* 1' because of weird javascript type conversion i dont understand
+            this.m_dWeights[w] += ((learningRate * influence * (target[w] - this.m_dWeights[w])) * 1).toFixed(4) * 1; // '* 1' because of weird javascript type conversion i dont understand
         }
     }
 }
