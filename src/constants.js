@@ -1,8 +1,8 @@
 const constWindowWidth = 400; //width of the window
 const constWindowHeight = 400; //height of the window 
 
-const constNumCellsAcross = 10; // No of nodes in each row
-const constNumCellsDown = 10;   //No of nodes in each column
+const constNumCellsAcross = 16; // No of nodes in each row
+const constNumCellsDown = 16;   //No of nodes in each column
 
 const constCellWidth = constWindowWidth/constNumCellsAcross;
 const constCellHeight = constWindowHeight/constNumCellsDown;

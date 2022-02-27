@@ -22,7 +22,7 @@ function draw() {   //Main loop
     } else {    //When training is completed stop main loop
         console.log("Done");
         som1.render();
-        noLoop();   //stop main loop
+        // noLoop();   //stop main loop
     }
     fill(0, 102, 153);
     textSize(18);
